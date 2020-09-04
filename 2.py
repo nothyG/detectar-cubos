@@ -4,7 +4,7 @@ import pytesseract
 import time
 pytesseract.pytesseract.tesseract_cmd = r'D:\Programas\Tesseract-OCR\tesseract'
 placa = []
-cap = cv2.VideoCapture("MOV1.mp4")
+cap = cv2.VideoCapture(0)
 while True:
   ret, frame = cap.read()
   frame = imutils.resize(frame,width=700)
